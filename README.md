@@ -1,23 +1,25 @@
-# CapstoneProjectTemplate /* Replace this line with the title of your project */
+## Investment Policy Statement Generator
 
 ## **Summary**
 
-Put a very high-level summary of the project.
+words words words
 
 ## **Team Members**
 
-- Joe Black
-- Joe Pesci
-- Joe Dalton
+- Colin Ferguson
+- Spencer Naugler
+- Janardhen Jayaven
+- Kaleb Matchett
 
 ## **Client Partner Information**
 
+
 ### *Company:*
-WHATEVER COMPANY or CORRESPONDENCE
+Accutech Systems Corporation
 
 ### *People:*
-- Jane Fonda
-- Jane Lynch
+- Matt Garrett
+- Trey Gourley
 
 ## **Links**
 
