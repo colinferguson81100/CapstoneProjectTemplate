@@ -2,7 +2,7 @@
 
 ## **Summary**
 
-words words words
+An Investment Policy Statement (IPS) is a document that describes an investor’s desired investment approach and any specific rules that an investment manager must follow when managing the investor’s portfolio. This project will include research into the variables necessary to create an IPS and the development of a service that collects and stores the required information from the investor and generates a pdf version of the IPS for signature.
 
 ## **Team Members**
 
