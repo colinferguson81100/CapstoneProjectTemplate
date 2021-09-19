@@ -1,8 +1,9 @@
-## Investment Policy Statement Generator
+## InvestAway
 
 ## **Summary**
 
-An Investment Policy Statement (IPS) is a document that describes an investor’s desired investment approach and any specific rules that an investment manager must follow when managing the investor’s portfolio. This project will include research into the variables necessary to create an IPS and the development of a service that collects and stores the required information from the investor and generates a pdf version of the IPS for signature.
+An *Investment Policy Statement (IPS)* is a document that describes an investor’s desired investment approach and any specific rules that an investment manager must follow.
+InvestAway is a tool to automate the creation of an Investment Policy Statement, and make the process streamlined.
 
 ## **Team Members**
 
@@ -32,5 +33,4 @@ Accutech Systems Corporation
 ## **Code Repositories**
 
 - [Mobile App - Android](https://www.github.com/WHEREEVER_THE_ANDROID_CODE_IS/) (EXAMPLE)
-- Others if more.
 
