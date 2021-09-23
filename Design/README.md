@@ -1,3 +1,8 @@
 # Design
 
-Design documents here... Explain each folder/file in this readme file.
+Business Requirments:
+Use Cases:
+Requirements:
+Domain Model:
+TechStack:
+Prototype:
