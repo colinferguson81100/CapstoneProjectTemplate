@@ -1,1 +1,41 @@
+# Minutes for Discovery Meeting
 
+## Meeting Start Time
+
+2021/09/27/3:30pm
+
+## Meeting End Time
+
+2021/09/27/4:15pm
+
+## Location/Medium
+
+Zoom Meeting
+
+## Present
+
+Team Members: Colin, Spencer, Kaleb
+Mentor: Evan
+Clients: Matt, Trey, Scott
+
+## Minute Recorder
+
+Colin
+
+## Topics Discussed
+
+-Introduction of clients and team members
+-Clients previous work with capstone teams
+-What the existing system is for the project and how they want it to change (The goal)
+-Requirements for project
+-Techstack and what they want us to use
+-Ways to better communicate with client (Microsoft Teams)
+-Non-disclosure agreement
+
+## Things Clarified
+
+-What an IPS is and what it does
+-What Cheetah is and how they want us to use it with the project
+-Goal of project
+-What the tech stack is for the project
+-Specific requiremnts that they want the project to have(Need more info in the future about this)
