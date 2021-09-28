@@ -1,3 +1,4 @@
 # Discovery
 
-Discovery documents here. Explain each folder/file in this readme file.
+Mintues.md is the meeting mintutes for the discovery meeting
+Screenshot.png is a screenshot of the discovery meething
