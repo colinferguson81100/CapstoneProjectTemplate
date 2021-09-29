@@ -1,4 +1,5 @@
 
-- Backend: Dotnet C#
-- Frontend: Razor or (Vue) (ask even how they fit togeter if they do)
-- External API's: Accutech Cheeta (maybe accunet, moneytree)
+- [Backend: Dotnet C#](https://dotnet.microsoft.com/download)
+- [Vue](https://vuejs.org/)
+- [Cheeta](https://www.trustasc.com/cheetah/)
+- [MoneyTree (maybe)](https://www.moneytree.com/)
