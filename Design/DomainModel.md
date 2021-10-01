@@ -17,4 +17,4 @@
 - Emergency fund strategy
 - Drawdown Strategy
 
-(Note: this is a work in progress. This is merely a start; we hope to have some answers sent to Matt answered sometime tomorrow.)
+(Note: this is a work in progress; we plan to gain further insight into our domain model during the design meeting.)
