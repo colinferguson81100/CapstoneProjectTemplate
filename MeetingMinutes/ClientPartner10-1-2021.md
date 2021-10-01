@@ -14,9 +14,9 @@ Zoom
 
 ## Present
 
-- Team Members: Colin, Kaleb
+- Team Members: Colin, Kaleb, Spencer
 - Student Mentor: Evan
-- Client: Trey
+- Client: Matt, Trey
 
 ## Minute Recorder
 
