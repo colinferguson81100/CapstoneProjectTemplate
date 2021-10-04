@@ -4,4 +4,3 @@
 - [Cheeta](https://www.trustasc.com/cheetah/)
 - [MoneyTree (maybe)](https://www.moneytree.com/)
 - [Vscode enviornment](https://code.visualstudio.com/)
-- [Hxviewer](https://www.dcloud.io/hbuilderx.html)
