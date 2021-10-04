@@ -1,6 +1,6 @@
 # Functional Requirements
 - **FR1** Risk tolerence questionare (**High**)
-- **FR2** Account overview **High**
+- **FR2** Account overview (**High**)
 - **FR3** A questionnaire that asks the user about the following information: (**High**)
   | Terms  | Terms (Continued) |
   | ------------- | ------------- |
