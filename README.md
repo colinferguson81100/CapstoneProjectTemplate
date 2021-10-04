@@ -9,7 +9,7 @@ InvestAway is a tool to automate the creation of an Investment Policy Statement,
 
 - Colin Ferguson
 - Spencer Naugler
-- Janardhen Jayaven
+- Janardhen Jayavel
 - Kaleb Matchett
 
 ## **Client Partner Information**
