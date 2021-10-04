@@ -2,11 +2,11 @@
 
 ## Meeting Start Time
 
-2021/09/30/5:45pm
+2021/09/30/17:45
 
 ## Meeting End Time
 
-2021/09/30/6:30pm
+2021/09/30/19:30
 
 ## Location/Medium
 
@@ -18,12 +18,16 @@ Colin, Kaleb, Spencer, Janardhen, Evan
 
 ## Minute Recorder
 
-Colin
+Colin, Kaleb
 
 ## Topics Discussed
 
-Went over what we need to talk about in the design meeting, how we should present things, what questions we should ask. Also went over some of the stuff we have prepared.
+- We reviewed over all existing Design plans from the Discovery meeting.
+- Went over what we need to talk about in the design meeting
+- Given tips for how we should present design elements
+- What additional questions we should ask our clients
 
 ## Things Clarified
 
-What to expect in the design meeting.
+- What to expect in the design meeting.
+- We should use Vue, not Blazor or Razor (as AccuTech already uses Vue)
