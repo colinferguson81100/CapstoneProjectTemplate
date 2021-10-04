@@ -28,6 +28,7 @@ Accutech Systems Corporation
 - [Team meeting minutes](MeetingMinutes/Team)
 - [Mentor meeting minutes](MeetingMinutes/Mentor)
 - [Client partner meeting minutes](MeetingMinutes/ClientPartner)
+- [Requrements Checklist]()
 - [Quick Domain Notes](https://www.investopedia.com/terms/i/ips.asp)
 
 ## **Code Repositories**
