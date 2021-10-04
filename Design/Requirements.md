@@ -2,13 +2,13 @@
 - **FR1** Risk tolerence questionare (**High**)
 - **FR2** Account overview **High**
 - **FR3** A questionnaire that asks the user about the following information: (**High**)
-| Terms  | Terms (Continued) |
-| ------------- | ------------- |
-| Risk Tolerance | Asset allocation |
-| Time horizon | Emergency fund strategy |
-| Investment period | Drawdown |
-| Investment strategy | Personal capital |
-| Return on investment |
+  | Terms  | Terms (Continued) |
+  | ------------- | ------------- |
+  | Risk Tolerance | Asset allocation |
+  | Time horizon | Emergency fund strategy |
+  | Investment period | Drawdown |
+  | Investment strategy | Personal capital |
+  | Return on investment |
 
 - **FR4** Output investment policy statement as a PDF file (**High**)
 - **FR5** Mobile version (**Low**)
