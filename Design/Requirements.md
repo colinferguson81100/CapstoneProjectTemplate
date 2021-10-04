@@ -1,22 +1,20 @@
 # Functional Requirements
-- **High** Risk tolerence questionare
-- **High** Account overview
-- **High** Output investment policy statement as a PDF file
-- **Low** Mobile version
+- **FR1** Risk tolerence questionare (**High**)
+- **FR2** Account overview **High**
+- **FR3** A questionnaire that asks the user about the following information: (**High**)
+| Terms  | Terms (Continued) |
+| ------------- | ------------- |
+| Risk Tolerance | Asset allocation |
+| Time horizon | Emergency fund strategy |
+| Investment period | Drawdown |
+| Investment strategy | Personal capital |
+| Return on investment |
 
-# Things that must be included in IPS statement:
-- Risk tolerance
-- Time horizon
-- Investment period
-- Investment strategy
-- Return on investment
-- Asset allocation
-- Emergency fund strategy
-- Drawdown
-- Personal capital
+- **FR4** Output investment policy statement as a PDF file (**High**)
+- **FR5** Mobile version (**Low**)
 
 # Non-Functional Requirements
-- Should not use more than 1GB ram at any point
-- Should be able to present a PDF document to the user in less than 10 seconds after confirming that the IPS is complete
-- Should be able to handle the same number of users as Cheetah (we don't know exact numbers due to NDA)
-- Our UI should be consistent with upcoming changes to standardize AccuTech's UI appearance and layout (details TBA due to NDA, but worth keeping in mind).
+- **NR1** Should not use more than 1GB ram at any point (**High**)
+- **NR2** Present a PDF document to the user in less than 10 seconds after confirming that the IPS is complete (**Medium**)
+- **NR3** Should be able to handle the same number of users as Cheetah (we don't know exact numbers due to NDA) (**Medium**)
+- **NR4** Our UI should be consistent with upcoming changes to standardize AccuTech's UI appearance and layout (details TBA due to NDA) (**Medium**)
