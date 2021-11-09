@@ -2,7 +2,7 @@
 
 ## Setup the frontend and backend. (clone locations don't matter).
 
-### Setup Backend
+### Backend Setup 
 ```bash
     git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
 ```
