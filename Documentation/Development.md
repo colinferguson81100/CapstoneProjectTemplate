@@ -60,4 +60,4 @@ navigate to the project root directory and enter
 ```bash
 dotnet test
 ```
-to run the tests
+to run the tests.
