@@ -20,17 +20,20 @@ Install dependencies
 ```
 
 ### Frontend setup
-Having issues with npm run serve, so until I can figure out what is wrong follow these steps to run the frontend
 
 1. Clone the frontend repository onto your computer
-1. Install Vue CLI with this command in a terminal: npm install -g @vue/cli
-1. Start the Vue CLI with this command in a terminal: vue ui
-1. Once the Vue CLI opens import the frontend repository into the Vue Project Manager
-1. Once the project is imported click on the project link to take you to the project dashboard
-1. Click on tasks
-1. Click on serve
-1. Click run task
-1. Once the app builds go to localhost:8080 to get to the project
+2. run npm serve in terminal
+-if npm serve doesnt work continue with the steps below instead
+
+
+4. Install Vue CLI with this command in a terminal: npm install -g @vue/cli
+5. Start the Vue CLI with this command in a terminal: vue ui
+6. Once the Vue CLI opens import the frontend repository into the Vue Project Manager
+7. Once the project is imported click on the project link to take you to the project dashboard
+8. Click on tasks
+9. Click on serve
+10. Click run task
+11. Once the app builds go to localhost:8080 to get to the project
 
 ## Runthrough 
 1. go through the frontend and make a pdf
