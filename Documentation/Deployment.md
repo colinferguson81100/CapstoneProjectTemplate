@@ -30,11 +30,6 @@ Clone the frontend repository onto your machine. It does not matter where it is 
 https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
 ```
 
-Navigate to the project directory.
-```bash
-    cd vue_ips
-```
-
 Install the required npm packages.
 ```bash
     npm install
