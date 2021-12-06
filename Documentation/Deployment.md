@@ -76,12 +76,12 @@ Create and start docker container.
 
 Use Docker Desktop to access the project.
 
-## Utilizing Our Project: 
+# Utilizing Our Project: 
 1. Complete the questionnaire through the frontend.
 1. Once complete, your investment policy statement (IPS) will be created as a PDF document with the information from your questionnaire answers.
 1. The PDF file may be downloaded through your browser!
 
 # Troubleshooting
-
+- All errors will be output to the console
 Small bug with generating pdf. May have to press the "Generate PDF button twice"
 
