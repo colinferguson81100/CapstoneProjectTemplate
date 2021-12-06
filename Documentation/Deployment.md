@@ -1,61 +1,85 @@
-# Setup
+# How to Set Up the Project
+- This project comes in two parts: a frontend and a backend.
+    - The frontend involves the parts of the code that a user will interact with, such as our questionnaire and user interface.
+    - The backend contains code that the user does not directly see or interact with, such as creating a PDF document.
 
-## Setup the frontend and backend. (clone locations don't matter).
+- There are two ways to build our project: manually and through Docker Desktop. Both approaches are detailed below.
 
-### Backend Setup 
+# Without Docker (Manual Setup):
+### Backend:
+
+Clone the backend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
 ```bash
     git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
 ```
 
-Go to the project directory
-
+Navigate to the project directory.
 ```bash
     cd bsu.ips.generator
 ```
 
-Install dependencies
-
+Install the required dependencies.
 ```bash
     dotnet restore
 ```
 
-### Frontend setup
+### Frontend:
 
-1. Clone the frontend repository onto your computer
+Clone the frontend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+```bash
+https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
+```
 
-Without Docker:
+Navigate to the project directory.
+```bash
+    cd vue_ips
+```
 
-2. Install npm packages
+Install the required npm packages.
 ```bash
     npm install
 ```
 
-3. Run project
+Run the project.
 ```bash
     npm run serve
 ```
 
-4. Go to localhost 8080
+Go to localhost 8080
 
-With Docker:
 
-2. Install Docker Desktop
+# With Docker Desktop (Semi-Automated Setup):
+### Backend:
 
-3. Build image
+Coming Soon!
+
+### Frontend:
+Clone the frontend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+```bash
+https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
+```
+
+Install Docker Desktop.
+```
+https://www.docker.com/products/docker-desktop
+```
+
+Build the image.
 ```bash
     docker build -t ips/bsu.ips-generator.frontend .
 ```
 
-4. Create and start docker container
+Create and start docker container.
 ```bash
     docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
 ```
 
-5. Use Docker desktop to access project
+Use Docker Desktop to access the project.
 
-## Runthrough 
-1. go through the frontend and make a pdf
-1. pdf file should be downloaded through your browser
+## Utilizing Our Project: 
+1. Complete the questionnaire through the frontend.
+1. Once complete, your investment policy statement (IPS) will be created as a PDF document with the information from your questionnaire answers.
+1. The PDF file may be downloaded through your browser!
 
 # Troubleshooting
 
