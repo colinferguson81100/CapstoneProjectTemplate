@@ -21,6 +21,7 @@ Accutech Systems Corporation
 ### *People:*
 - Matt Garrett
 - Trey Gourley
+- Scott Meyer
 
 ## **Links**
 
