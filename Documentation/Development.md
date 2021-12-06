@@ -90,5 +90,43 @@ to run the tests.
     ├── package.json
     └── README.md
 ```
+node_modules can be ignored
 
+the router directory and index.js controlls the change to each page in the generator
 
+each view in the views directory is a different section in the generator
+
+App.vue and main.js controls and sets up the entire generator
+
+tests directory contains tests for the frontend
+
+.gitignore contains files than can be ignored by git
+
+babel.config.js exports babel into the project which helps with javascript code
+
+Dockerfile contains the docker setup and instructions on how to use it
+
+jest.config.js exports jest into the project which helps with testing
+
+package.json contains general information about what dependencies and configurations of the project
+
+README.md contains instructions on how to run the frontend
+
+#  Steps to run Docker for Frontend
+
+Install Docker Desktop.
+```
+https://www.docker.com/products/docker-desktop
+```
+
+Build the image.
+```bash
+    docker build -t ips/bsu.ips-generator.frontend .
+```
+
+Create and start docker container.
+```bash
+    docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
+```
+
+Use Docker Desktop to access the project.
