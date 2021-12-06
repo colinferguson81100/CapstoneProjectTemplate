@@ -10,6 +10,8 @@ Dependencies
 No required ide, but it is recommended to have [VScode](https://code.visualstudio.com/) and install the extensions for csharp and vue
 
 # Explain the folder structure of your code repositories and what they mean.
+
+## Backend
 ```
 ├── bsu.ips-generator.backend.sln
 ├── Ips.PdfConverter
@@ -61,3 +63,32 @@ navigate to the project root directory and enter
 dotnet test
 ```
 to run the tests.
+
+## Frontend
+```
+─── bsu.ips-generator.frontend
+    ├── node_modules
+    ├── src
+    │   ├── assets
+    |   |   └── question.png
+    │   ├── router
+    |   |   └── index.js
+    │   ├── views
+    │   |   ├── FinalPage.vue
+    │   |   ├── Goals.vue
+    │   |   ├── Landing.vue
+    │   |   ├── RiskTolerance.vue
+    │   |   └── TimeHorizon.vue
+    │   ├── App.vue
+    │   └── main.js
+    ├── tests
+    |   └── add tests here
+    ├── .gitignore
+    ├── babel.config.js
+    ├── Dockerfile
+    ├── jest.config.js
+    ├── package.json
+    └── README.md
+```
+
+
