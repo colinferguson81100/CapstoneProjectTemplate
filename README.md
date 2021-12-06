@@ -9,7 +9,7 @@ InvestAway is a tool to automate the creation of an Investment Policy Statement,
 
 - Colin Ferguson
 - Spencer Naugler
-- Janardhen Jayavel
+- Janardhen "JJ" Jayavel
 - Kaleb Matchett
 
 ## **Client Partner Information**
@@ -22,6 +22,7 @@ Accutech Systems Corporation
 - Matt Garrett
 - Trey Gourley
 - Scott Meyer
+- Evan Knapke (Student Mentor)
 
 ## **Links**
 
