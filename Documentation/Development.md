@@ -1,6 +1,6 @@
 # Summary of the Technical Aspects of this Project:
 - This project is split into two parts – frontend and backend – and each have their own technologies.
-- 
+
 # Explain what kind of technologies are needed to replicate and how.
 Dependencies
 - Dotnet Core >= [5.0](https://dotnet.microsoft.com/download)
