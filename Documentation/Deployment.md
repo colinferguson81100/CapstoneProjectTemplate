@@ -56,17 +56,17 @@ https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
 
 Install Docker Desktop.
 ```
-https://www.docker.com/products/docker-desktop
+    https://www.docker.com/products/docker-desktop
 ```
 
 Build the image by running this command within a terminal in the project directory.
 ```bash
-docker build -t ips/bsu.ips-generator.frontend .
+    docker build -t ips/bsu.ips-generator.frontend .
 ```
 
 Create and start the Docker container by running this command.
 ```bash
-docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
+    docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
 ```
 
 Use Docker Desktop to access the project.
