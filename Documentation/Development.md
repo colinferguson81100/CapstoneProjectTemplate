@@ -51,7 +51,9 @@ how the data is supplied to the document.
 The Server part of the project is in the aptly named `Ips.Server` project.
 The api endpoints are located in the `Startup.cs` file, this also functions as a reasonable server entry point.
 
-Of course `Ips.Test` is where all the testing files go 
+`Ips.Test` is where all the testing files go.
+
+`README.md` contains instructions on how to run the backend.
 
 
 # This document will have a special section on how to test and how to interpret the result.
@@ -112,21 +114,54 @@ package.json contains general information about what dependencies and configurat
 
 README.md contains instructions on how to run the frontend
 
-#  Steps to run Docker for Frontend
+#  Replicating the Project with Docker
+
+### Backend:
+
+Clone the backend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+```bash
+git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
+```
+
+Navigate to the project directory if you are not already there.
+```
+cd bsu.ips.generator
+```
+
+Start the server.
+```
+docker-compose up --build
+```
+
+Tear down the server if needed (hold control and hit c to stop the asp.net service).
+```
+docker-compose down
+```
+
+Url to send data too for pdf creation:
+```
+http://0.0.0.0:5000/api/Post
+```
+
+### Frontend:
+Clone the frontend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+```bash
+https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
+```
 
 Install Docker Desktop.
 ```
 https://www.docker.com/products/docker-desktop
 ```
 
-Build the image.
+Build the image by running this command within a terminal in the project directory.
 ```bash
-    docker build -t ips/bsu.ips-generator.frontend .
+docker build -t ips/bsu.ips-generator.frontend .
 ```
 
-Create and start docker container.
+Create and start the Docker container by running this command.
 ```bash
-    docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
+docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
 ```
 
 Use Docker Desktop to access the project.
