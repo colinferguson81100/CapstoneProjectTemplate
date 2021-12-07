@@ -10,17 +10,17 @@
 
 Clone the backend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
 ```bash
-    git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
+git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
 ```
 
 Navigate to the project directory.
 ```bash
-    cd bsu.ips.generator
+cd bsu.ips.generator
 ```
 
 Install the required dependencies.
 ```bash
-    dotnet restore
+dotnet restore
 ```
 
 ### Frontend:
@@ -32,12 +32,12 @@ https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
 
 Install the required npm packages.
 ```bash
-    npm install
+npm install
 ```
 
 Run the project.
 ```bash
-    npm run serve
+npm run serve
 ```
 
 Go to localhost 8080
@@ -46,7 +46,30 @@ Go to localhost 8080
 # With Docker Desktop (Semi-Automated Setup):
 ### Backend:
 
-Coming Soon!
+Clone the backend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+```bash
+git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
+```
+
+Navigate to the project directory if you are not already there.
+```
+cd bsu.ips.generator
+```
+
+Start the server.
+```
+docker-compose up --build
+```
+
+Tear down the server if needed (hold control and hit c to stop the asp.net service).
+```
+docker-compose down
+```
+
+Url to send data too for pdf creation:
+```
+http://0.0.0.0:5000/api/Post
+```
 
 ### Frontend:
 Clone the frontend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
@@ -56,17 +79,17 @@ https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
 
 Install Docker Desktop.
 ```
-    https://www.docker.com/products/docker-desktop
+https://www.docker.com/products/docker-desktop
 ```
 
 Build the image by running this command within a terminal in the project directory.
 ```bash
-    docker build -t ips/bsu.ips-generator.frontend .
+docker build -t ips/bsu.ips-generator.frontend .
 ```
 
 Create and start the Docker container by running this command.
 ```bash
-    docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
+docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
 ```
 
 Use Docker Desktop to access the project.
@@ -77,6 +100,6 @@ Use Docker Desktop to access the project.
 1. The PDF file may be downloaded through your browser!
 
 # Troubleshooting
-- All errors will be output to the console
-Small bug with generating pdf. May have to press the "Generate PDF button twice"
+- All errors will be outputted to the console.
 
+Small bug with generating pdf. May have to press the "Generate PDF button twice"
