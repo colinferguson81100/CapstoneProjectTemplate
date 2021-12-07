@@ -13,11 +13,15 @@ No required ide, but it is recommended to have [VScode](https://code.visualstudi
 
 ## Backend
 ```
+.
 ├── bsu.ips-generator.backend.sln
+├── bsu.ips-generator.backend.sln.DotSettings.user
+├── docker-compose.debug.yml
+├── docker-compose.yml
 ├── Ips.PdfConverter
+│   ├── background.png
 │   ├── bin
 │   ├── Converter.cs
-│   ├── Goal.cs
 │   ├── Helpers.cs
 │   ├── IpsDocument.cs
 │   ├── Ips.PdfConverter.csproj
@@ -26,8 +30,11 @@ No required ide, but it is recommended to have [VScode](https://code.visualstudi
 ├── Ips.Server
 │   ├── appsettings.Development.json
 │   ├── appsettings.json
+│   ├── background.png
 │   ├── bin
-│   ├── Files
+│   ├── Binders
+│   ├── Controllers
+│   ├── Dockerfile
 │   ├── Ips.Server.csproj
 │   ├── obj
 │   ├── Program.cs
@@ -35,10 +42,14 @@ No required ide, but it is recommended to have [VScode](https://code.visualstudi
 │   └── Startup.cs
 ├── Ips.Test
 │   ├── bin
-│   ├── DocTest.cs
+│   ├── Dockerfile
+│   ├── DocumentGenerationUnitTests.cs
+│   ├── IntegrationTests.cs
 │   ├── Ips.Test.csproj
+│   ├── missingRiskTolerance.json
 │   ├── obj
-│   └── SetupTest.cs
+│   ├── validPdfJson.json
+│   └── validpdf.pdf
 └── README.md
 ```
 
@@ -49,9 +60,9 @@ The `IpsDocument` File specifies how the actually pdf "looks" along with
 how the data is supplied to the document.
 
 The Server part of the project is in the aptly named `Ips.Server` project.
-The api endpoints are located in the `Startup.cs` file, this also functions as a reasonable server entry point.
+It's api endpoints are located Controllers/ApiController class.
 
-Of course `Ips.Test` is where all the testing files go 
+Of course `Ips.Test` is where all the testing files go
 
 
 # This document will have a special section on how to test and how to interpret the result.

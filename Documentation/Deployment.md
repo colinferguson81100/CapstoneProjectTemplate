@@ -5,22 +5,27 @@
 
 - There are two ways to build our project: manually and through Docker Desktop. Both approaches are detailed below.
 
-# Without Docker (Manual Setup):
 ### Backend:
 
-Clone the backend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+Clone the project
 ```bash
-    git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
+  git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
 ```
 
-Navigate to the project directory.
+Go to the project directory
 ```bash
-    cd bsu.ips.generator
+  cd bsu.ips.generator
 ```
 
-Install the required dependencies.
+Start the server
 ```bash
-    dotnet restore
+docker-compose up --build
+```
+
+Tear down the server if needed
+***(hold control and hit c to stop the asp.net service)***
+```bash
+docker-compose down
 ```
 
 ### Frontend:
