@@ -1,7 +1,7 @@
 # Summary of the Technical Aspects of this Project:
 - This project is split into two parts – frontend and backend – and each have their own technologies.
 
-# Explain what kind of technologies are needed to replicate and how.
+# Required Technologies to Replicate Our Project:
 Dependencies
 - Dotnet Core >= [5.0](https://dotnet.microsoft.com/download)
 - Vue [latest stable](https://vuejs.org/v2/guide/installation.html)
@@ -9,9 +9,9 @@ Dependencies
 # Required IDEs, frameworks, etc.
 No required ide, but it is recommended to have [VScode](https://code.visualstudio.com/) and install the extensions for csharp and vue
 
-# Explain the folder structure of your code repositories and what they mean.
+# Explaining the Folder Structure of our Code Repositories:
 
-## Backend
+### Backend:
 ```
 ├── bsu.ips-generator.backend.sln
 ├── Ips.PdfConverter
@@ -55,18 +55,7 @@ The api endpoints are located in the `Startup.cs` file, this also functions as a
 
 `README.md` contains instructions on how to run the backend.
 
-
-# This document will have a special section on how to test and how to interpret the result.
-  - Running might be as simple as running a command or clicking some menu items.
-  - Interpreting might be as simple as showing a sample testing report and explaining different parts of it.
-
-navigate to the project root directory and enter
-```bash
-dotnet test
-```
-to run the tests.
-
-## Frontend
+### Frontend:
 ```
 ─── bsu.ips-generator.frontend
     ├── node_modules
@@ -113,6 +102,16 @@ jest.config.js exports jest into the project which helps with testing
 package.json contains general information about what dependencies and configurations of the project
 
 README.md contains instructions on how to run the frontend
+
+# How to Test and How to Interpret the Result:
+  - Running might be as simple as running a command or clicking some menu items.
+  - Interpreting might be as simple as showing a sample testing report and explaining different parts of it.
+
+navigate to the project root directory and enter
+```bash
+dotnet test
+```
+to run the tests.
 
 #  Replicating the Project with Docker
 
