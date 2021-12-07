@@ -1,7 +1,7 @@
 # Summary of the Technical Aspects of this Project:
 - This project is split into two parts – frontend and backend – and each have their own technologies.
-- 
-# Explain what kind of technologies are needed to replicate and how.
+
+# Required Technologies to Replicate Our Project:
 Dependencies
 - Dotnet Core >= [5.0](https://dotnet.microsoft.com/download)
 - Vue [latest stable](https://vuejs.org/v2/guide/installation.html)
@@ -9,9 +9,9 @@ Dependencies
 # Required IDEs, frameworks, etc.
 No required ide, but it is recommended to have [VScode](https://code.visualstudio.com/) and install the extensions for csharp and vue
 
-# Explain the folder structure of your code repositories and what they mean.
+# Explaining the Folder Structure of our Code Repositories:
 
-## Backend
+### Backend:
 ```
 .
 ├── bsu.ips-generator.backend.sln
@@ -69,13 +69,7 @@ Of course `Ips.Test` is where all the testing files go
   - Running might be as simple as running a command or clicking some menu items.
   - Interpreting might be as simple as showing a sample testing report and explaining different parts of it.
 
-navigate to the project root directory and enter
-```bash
-dotnet test
-```
-to run the tests.
-
-## Frontend
+### Frontend:
 ```
 ─── bsu.ips-generator.frontend
     ├── node_modules
@@ -123,21 +117,64 @@ package.json contains general information about what dependencies and configurat
 
 README.md contains instructions on how to run the frontend
 
-#  Steps to run Docker for Frontend
+# How to Test and How to Interpret the Result:
+  - Running might be as simple as running a command or clicking some menu items.
+  - Interpreting might be as simple as showing a sample testing report and explaining different parts of it.
+
+navigate to the project root directory and enter
+```bash
+dotnet test
+```
+to run the tests.
+
+#  Replicating the Project with Docker
+
+### Backend:
+
+Clone the backend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+```bash
+git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
+```
+
+Navigate to the project directory if you are not already there.
+```
+cd bsu.ips.generator
+```
+
+Start the server.
+```
+docker-compose up --build
+```
+
+Tear down the server if needed (hold control and hit c to stop the asp.net service).
+```
+docker-compose down
+```
+
+Url to send data too for pdf creation:
+```
+http://0.0.0.0:5000/api/Post
+```
+
+### Frontend:
+Clone the frontend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+```bash
+https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
+```
 
 Install Docker Desktop.
 ```
 https://www.docker.com/products/docker-desktop
 ```
 
-Build the image.
+Build the image by running this command within a terminal in the project directory.
 ```bash
-    docker build -t ips/bsu.ips-generator.frontend .
+docker build -t ips/bsu.ips-generator.frontend .
 ```
 
-Create and start docker container.
+Create and start the Docker container by running this command.
 ```bash
-    docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
+docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
 ```
 
 Use Docker Desktop to access the project.
