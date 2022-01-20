@@ -131,14 +131,14 @@ to run the tests.
 
 ### Backend:
 
-Clone the backend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
+Clone the InvestAway repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
 ```bash
 git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
 ```
 
 Navigate to the project directory if you are not already there.
 ```
-cd bsu.ips.generator
+cd bsu.ips-generator.frontend\backend\Ips.PdfConverter
 ```
 
 Start the server.
@@ -146,9 +146,24 @@ Start the server.
 docker-compose up --build
 ```
 
-Tear down the server if needed (hold control and hit c to stop the asp.net service).
+### Handling Errors:
+
+Try the following to fix the project:
+
+If you get the following error
+```Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified.```
+Try running the following commands:
 ```
 docker-compose down
+```
+```
+dotnet restore
+```
+```
+cd bsu.ips-generator.frontend\backend\Ips.PdfConverter
+```
+```
+docker-compose up --build
 ```
 
 Url to send data too for pdf creation:
