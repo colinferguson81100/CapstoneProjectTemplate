@@ -129,12 +129,20 @@ to run the tests.
 
 #  Replicating the Project with Docker
 
-### Backend:
+### Replication Steps:
+
+Install Docker Desktop.
+```
+https://www.docker.com/products/docker-desktop
+```
 
 Clone the InvestAway repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
 ```bash
 git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
 ```
+
+*Note: Some IDEs will suggest that some dependencies are missing upon loading the project for the first time.
+This can be ignored, as docker will install the required dependencies.*
 
 Navigate to the project directory if you are not already there.
 ```
@@ -146,23 +154,21 @@ Start the server.
 docker-compose up --build
 ```
 
-### Handling Errors:
+Navigate to <LINKHERE> in your internet browser to begin the quiz,
+
+### Resolving Errors:
 
 Try the following to fix the project:
 
 If you get the following error
-```Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified.```
+```
+Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified.
+```
 Try running the following commands:
 ```
 docker-compose down
-```
-```
 dotnet restore
-```
-```
 cd bsu.ips-generator.frontend\backend\Ips.PdfConverter
-```
-```
 docker-compose up --build
 ```
 
@@ -170,26 +176,3 @@ Url to send data too for pdf creation:
 ```
 http://0.0.0.0:5000/api/Post
 ```
-
-### Frontend:
-Clone the frontend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
-```bash
-https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
-```
-
-Install Docker Desktop.
-```
-https://www.docker.com/products/docker-desktop
-```
-
-Build the image by running this command within a terminal in the project directory.
-```bash
-docker build -t ips/bsu.ips-generator.frontend .
-```
-
-Create and start the Docker container by running this command.
-```bash
-docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
-```
-
-Use Docker Desktop to access the project.
