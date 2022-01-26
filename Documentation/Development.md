@@ -131,14 +131,14 @@ to run the tests.
 
 ### Replication Steps:
 
-Install Docker Desktop.
+Install Docker Desktop and **ensure it is currently running on your machine.**
 ```
 https://www.docker.com/products/docker-desktop
 ```
 
 Clone the InvestAway repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
 ```bash
-git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
+git clone https://423rd@bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
 ```
 
 *Note: Some IDEs will suggest that some dependencies are missing upon loading the project for the first time.
@@ -149,18 +149,21 @@ Navigate to the project directory if you are not already there.
 cd bsu.ips-generator.frontend\backend\Ips.PdfConverter
 ```
 
-Start the server.
+Open a terminal in this location (if you are not already using one) and start the server:
 ```
 docker-compose up --build
 ```
 
-Navigate to <LINKHERE> in your internet browser to begin the quiz,
+Open one of the following url links in your internet browser to begin the quiz!
+- Windows & Mac: http://127.0.0.1:8080
+- Linux: http://172.18.0.3:8080
 
 ### Resolving Errors:
 
-Try the following to fix the project:
+General troubleshooting tip:
+- Check for updates within your IDE, Git Bash, and Docker Desktop and update as necessary.
 
-If you get the following error
+If you receive this error:
 ```
 Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified.
 ```
@@ -172,7 +175,8 @@ cd bsu.ips-generator.frontend\backend\Ips.PdfConverter
 docker-compose up --build
 ```
 
-Url to send data too for pdf creation:
+If you recieve this error:
 ```
-http://0.0.0.0:5000/api/Post
+error during connect: This error may indicate that the docker daemon is not running.
 ```
+ensure that Docker Desktop is properly installed and **is currently running**.
