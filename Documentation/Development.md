@@ -129,67 +129,54 @@ to run the tests.
 
 #  Replicating the Project with Docker
 
-### Backend:
+### Replication Steps:
+
+Install Docker Desktop and **ensure it is currently running on your machine.**
+```
+https://www.docker.com/products/docker-desktop
+```
 
 Clone the InvestAway repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
 ```bash
-git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.backend.git
+git clone https://423rd@bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
 ```
+
+*Note: Some IDEs will suggest that some dependencies are missing upon loading the project for the first time.
+This can be ignored, as docker will install the required dependencies.*
 
 Navigate to the project directory if you are not already there.
 ```
 cd bsu.ips-generator.frontend\backend\Ips.PdfConverter
 ```
 
-Start the server.
+Open a terminal in this location (if you are not already using one) and start the server:
 ```
 docker-compose up --build
 ```
 
-### Handling Errors:
+Open one of the following url links in your internet browser to begin the quiz!
+- Windows & Mac: http://127.0.0.1:8080
+- Linux: http://172.18.0.3:8080
 
-Try the following to fix the project:
+### Resolving Errors:
 
-If you get the following error
-```Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified.```
+General troubleshooting tip:
+- Check for updates within your IDE, Git Bash, and Docker Desktop and update as necessary.
+
+If you receive this error:
+```
+Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified.
+```
 Try running the following commands:
 ```
 docker-compose down
-```
-```
 dotnet restore
-```
-```
 cd bsu.ips-generator.frontend\backend\Ips.PdfConverter
-```
-```
 docker-compose up --build
 ```
 
-Url to send data too for pdf creation:
+If you recieve this error:
 ```
-http://0.0.0.0:5000/api/Post
+error during connect: This error may indicate that the docker daemon is not running.
 ```
-
-### Frontend:
-Clone the frontend repository onto your machine. It does not matter where it is cloned to as long as you remember where it is.
-```bash
-https://bitbucket.org/accutechdev/bsu.ips-generator.frontend.git
-```
-
-Install Docker Desktop.
-```
-https://www.docker.com/products/docker-desktop
-```
-
-Build the image by running this command within a terminal in the project directory.
-```bash
-docker build -t ips/bsu.ips-generator.frontend .
-```
-
-Create and start the Docker container by running this command.
-```bash
-docker run -it -p 8080:8080 -d --name bsu.ips-generator.frontend ips/bsu.ips-generator.frontend
-```
-
-Use Docker Desktop to access the project.
+ensure that Docker Desktop is properly installed and **is currently running**.
