@@ -69,16 +69,27 @@ Of course `Ips.Test` is where all the testing files go
   - Running might be as simple as running a command or clicking some menu items.
   - Interpreting might be as simple as showing a sample testing report and explaining different parts of it.
 
+navigate to the project root directory and enter
+```bash
+dotnet test
+```
+to run the tests.
+
 ### Frontend:
 ```
 ─── bsu.ips-generator.frontend
+    ├── cypress
+    │   └── ... (contains testing files)
     ├── node_modules
     ├── src
     │   ├── assets
     |   |   └── question.png
+    │   ├── components
+    │   │    └── Sidebar.vue
     │   ├── router
     |   |   └── index.js
     │   ├── views
+    │   |   ├── AssetAllocation.vue        
     │   |   ├── FinalPage.vue
     │   |   ├── Goals.vue
     │   |   ├── Landing.vue
@@ -86,16 +97,19 @@ Of course `Ips.Test` is where all the testing files go
     │   |   └── TimeHorizon.vue
     │   ├── App.vue
     │   └── main.js
-    ├── tests
-    |   └── add tests here
+    ├── .dockerignore
     ├── .gitignore
-    ├── babel.config.js
+    ├── cypress.json
     ├── Dockerfile
-    ├── jest.config.js
+    ├── package-lock.json
     ├── package.json
     └── README.md
 ```
+cypress is the frontend testing framework. All the tests for the frontend are stored here
+
 node_modules can be ignored
+
+the components directory holds components that are used in different views on the frontend
 
 the router directory and index.js controlls the change to each page in the generator
 
@@ -105,27 +119,22 @@ App.vue and main.js controls and sets up the entire generator
 
 tests directory contains tests for the frontend
 
-.gitignore contains files than can be ignored by git
+.dockerignorre contains files that can be ignored by docker
 
-babel.config.js exports babel into the project which helps with javascript code
+.gitignore contains files that can be ignored by git
+
+cypress.json is used for storing configuration values for tests
 
 Dockerfile contains the docker setup and instructions on how to use it
 
-jest.config.js exports jest into the project which helps with testing
-
-package.json contains general information about what dependencies and configurations of the project
+package.json and package-lock.json contains general information about what dependencies and configurations of the project
 
 README.md contains instructions on how to run the frontend
 
 # How to Test and How to Interpret the Result:
-  - Running might be as simple as running a command or clicking some menu items.
-  - Interpreting might be as simple as showing a sample testing report and explaining different parts of it.
-
-navigate to the project root directory and enter
-```bash
-dotnet test
-```
-to run the tests.
+  - use the command npx cypress open to start up the cypress testing browser (make sure cypress is installed using npm install cypress)
+  - go to the testing browser and click on the test files you want to run
+  - once clicked cypress should run through all the tests and check if they pass or fail
 
 #  Replicating the Project with Docker
 
