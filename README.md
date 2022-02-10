@@ -31,9 +31,10 @@ Accutech Systems Corporation
 - [Mentor meeting minutes](MeetingMinutes/Mentor)
 - [Client partner meeting minutes](MeetingMinutes/ClientPartner)
 - [Requirements Checklist](https://github.com/colinferguson81100/InvestAway/projects/1#column-16260869)
+- [Documentation] (https://github.com/colinferguson81100/InvestAway/tree/master/Documentation)
 - [Quick Domain Notes](https://www.investopedia.com/terms/i/ips.asp)
 
 ## **Code Repositories**
 
-- [Mobile App - Android](https://www.github.com/WHEREEVER_THE_ANDROID_CODE_IS/) (EXAMPLE)
+https://bitbucket.org/accutechdev/bsu.ips-generator.frontend/src/master/
 
