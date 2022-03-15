@@ -85,7 +85,8 @@ to run the tests.
     │   ├── assets
     |   |   └── question.png
     │   ├── components
-    │   │    └── Sidebar.vue
+    │   |   ├── CurrencyInput.vue
+    │   │   └── Sidebar.vue
     │   ├── router
     |   |   └── index.js
     │   ├── views
@@ -119,7 +120,7 @@ App.vue and main.js controls and sets up the entire generator
 
 tests directory contains tests for the frontend
 
-.dockerignorre contains files that can be ignored by docker
+.dockerignore contains files that can be ignored by docker
 
 .gitignore contains files that can be ignored by git
 
