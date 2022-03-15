@@ -10,7 +10,7 @@ git clone https://sanaugler@bitbucket.org/accutechdev/bsu.ips-generator.frontend
 
 Navigate to the project directory if you are not already there.
 ```
-cd bsu.ips.generator
+cd bsu.ips-generator.frontend
 ```
 
 Start the server.
