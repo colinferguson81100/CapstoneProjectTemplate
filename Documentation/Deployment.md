@@ -13,6 +13,10 @@ Navigate to the project directory if you are not already there.
 cd bsu.ips-generator.frontend
 ```
 
+
+Use Docker Desktop to access the project.
+
+# Utilizing Our Project: 
 Start the server.
 ```
 docker-compose up --build
@@ -22,15 +26,11 @@ Tear down the server if needed (hold control and hit c to stop the asp.net servi
 ```
 docker-compose down
 ```
-
-Url to send data too for pdf creation:
+open url in browser to use the frontend
 ```
-http://0.0.0.0:5000/api/Post
+http://127.0.0.1:8080
 ```
 
-Use Docker Desktop to access the project.
-
-# Utilizing Our Project: 
 1. Complete the questionnaire through the frontend.
 1. Once complete, your investment policy statement (IPS) will be created as a PDF document with the information from your questionnaire answers.
 1. The PDF file may be downloaded through your browser!

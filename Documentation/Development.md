@@ -4,7 +4,8 @@
 # Required Technologies to Replicate Our Project:
 Dependencies
 - Dotnet Core >= [5.0](https://dotnet.microsoft.com/download)
-- Vue [latest stable](https://vuejs.org/v2/guide/installation.html)
+- Vue [latest stable](https://vuejs.org/guide/quick-start.html#local)
+- Docker [3.4](https://docs.docker.com/get-docker/)
 
 # Required IDEs, frameworks, etc.
 No required ide, but it is recommended to have [VScode](https://code.visualstudio.com/) and install the extensions for csharp and vue
@@ -13,56 +14,51 @@ No required ide, but it is recommended to have [VScode](https://code.visualstudi
 
 ### Backend:
 ```
-.
-├── bsu.ips-generator.backend.sln
-├── bsu.ips-generator.backend.sln.DotSettings.user
-├── docker-compose.debug.yml
-├── docker-compose.yml
-├── Ips.PdfConverter
-│   ├── background.png
-│   ├── bin
-│   ├── Converter.cs
-│   ├── Helpers.cs
-│   ├── IpsDocument.cs
-│   ├── Ips.PdfConverter.csproj
-│   ├── obj
-│   └── PdfModel.cs
-├── Ips.Server
-│   ├── appsettings.Development.json
-│   ├── appsettings.json
-│   ├── background.png
-│   ├── bin
-│   ├── Binders
-│   ├── Controllers
-│   ├── Dockerfile
-│   ├── Ips.Server.csproj
-│   ├── obj
-│   ├── Program.cs
-│   ├── Properties
-│   └── Startup.cs
-├── Ips.Test
-│   ├── bin
-│   ├── Dockerfile
-│   ├── DocumentGenerationUnitTests.cs
-│   ├── IntegrationTests.cs
-│   ├── Ips.Test.csproj
-│   ├── missingRiskTolerance.json
-│   ├── obj
-│   ├── validPdfJson.json
-│   └── validpdf.pdf
-└── README.md
+├── backend
+│   ├── bsu.ips-generator.backend.sln
+│   ├── Ips.PdfConverter
+│   │   ├── AssetAllocation.cs
+│   │   ├── background.png
+│   │   ├── bin
+│   │   ├── DefaultStyle.cs
+│   │   ├── IAccountHandler.cs
+│   │   ├── IConverter.cs
+│   │   ├── Image.cs
+│   │   ├── IpsCheetahFactory.cs
+│   │   ├── IpsDocument.cs
+│   │   ├── Ips.PdfConverter.csproj
+│   │   ├── obj
+│   │   ├── PdfConverter.cs
+│   │   ├── PdfModel.cs
+│   │   └── PdfStyle.cs
+│   ├── Ips.Server
+│   │   ├── appsettings.Development.json
+│   │   ├── appsettings.json
+│   │   ├── background.png
+│   │   ├── bin
+│   │   ├── Controllers
+│   │   ├── Dockerfile
+│   │   ├── Ips.Server.csproj
+│   │   ├── obj
+│   │   ├── Program.cs
+│   │   ├── Properties
+│   │   └── Startup.cs
+│   ├── Ips.Test
+│   │   ├── DocumentGenerationUnitTests.cs
+│   │   ├── IntegrationTests.cs
+│   │   ├── Ips.Test.csproj
+│   │   ├── missingRiskTolerance.json
+│   │   └── validPdfJson.json
+│   ├── Nuget.config
+│   └── README.md
 ```
 
-The main logic for pdf generation is in the `Ips.PdfConverter` directory.
-`Converter.cs` is the main class the `Server` communicates with.
+- `Ips.PdfConverter` -> data injection into a pdf takes place here.
+  - `Converter.cs` -> pdf injection entrypoint.
+  - The `IpsDocument.cs` File specifies how the pdf looks 
 
-The `IpsDocument` File specifies how the actually pdf "looks" along with
-how the data is supplied to the document.
-
-The Server part of the project is in the aptly named `Ips.Server` project.
-It's api endpoints are located Controllers/ApiController class.
-
-Of course `Ips.Test` is where all the testing files go
+- `Ips.Server` -> asp.net server that communicates between the pdf generator and the frontend  
+  - `Api Endpoints` -> Controllers/ApiController class.
 
 
 # This document will have a special section on how to test and how to interpret the result.
@@ -77,34 +73,24 @@ to run the tests.
 
 ### Frontend:
 ```
-─── bsu.ips-generator.frontend
+└── frontend
     ├── cypress
-    │   └── ... (contains testing files)
-    ├── node_modules
-    ├── src
-    │   ├── assets
-    |   |   └── question.png
-    │   ├── components
-    │   |   ├── CurrencyInput.vue
-    │   │   └── Sidebar.vue
-    │   ├── router
-    |   |   └── index.js
-    │   ├── views
-    │   |   ├── AssetAllocation.vue        
-    │   |   ├── FinalPage.vue
-    │   |   ├── Goals.vue
-    │   |   ├── Landing.vue
-    │   |   ├── RiskTolerance.vue
-    │   |   └── TimeHorizon.vue
-    │   ├── App.vue
-    │   └── main.js
-    ├── .dockerignore
-    ├── .gitignore
+        (testing files)
     ├── cypress.json
     ├── Dockerfile
-    ├── package-lock.json
+    ├── node_modules
+        (frontend dependencies)
     ├── package.json
-    └── README.md
+    ├── package-lock.json
+    ├── README.md
+    └── src
+        ├── App.vue (vue entrypoint)
+        ├── assets (static images and site resources)
+        ├── components (reusable components)
+        ├── main.js (frontend entrypoint)
+        ├── router (url listing of the frontend)
+        ├── store (main storage of common variables)
+        └── views (how the frontend looks)
 ```
 cypress is the frontend testing framework. All the tests for the frontend are stored here
 
