@@ -20,7 +20,7 @@
 ### Colin
 -
 ### JJ
--
+- More than 80 projects were showcased. It was very interesting to see other's work being shown. In terms of our project, Everyone was excited as we said that we are building this for an actual corporation in Muncie. We had few people who knew about Accutech and some were very interested in what Accutech does. It's nice to see some interesting questions like " How do you tell whether user is moderatively conservative or not" and answer them. 
 ### Kaleb
 - The Student Symposium was an interesting experience because it allowed me to see many capstone projects that I otherwise never would have had the opportunity to see, and I like to imagine that's how other people felt about our project! I kind of wish there was more people around so there wasn't as much dead time during the event, but that's being nit picky. I'm interested to see what future events – such as the colloquium or the spring banquet – have to offer! 
 ### Spencer
