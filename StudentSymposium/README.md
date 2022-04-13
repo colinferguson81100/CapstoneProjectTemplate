@@ -18,7 +18,7 @@
 
 # Team reactions
 ### Colin
--
+- It was an interesting experience. Met a lot of cool people from a bunch of different educational backgrounds and I learned about things that I didnt even knew existed. I was only there for an hour but I defenitly felt that I learned a lot in that short time. It also felt good to showcase the project weve been working on since September. I felt a lot of pride showing it off and talking about it to other people.
 ### JJ
 - More than 80 projects were showcased. It was very interesting to see other's work being shown. In terms of our project, Everyone was excited as we said that we are building this for an actual corporation in Muncie. We had few people who knew about Accutech and some were very interested in what Accutech does. It's nice to see some interesting questions like " How do you tell whether user is moderatively conservative or not" and answer them. 
 ### Kaleb
