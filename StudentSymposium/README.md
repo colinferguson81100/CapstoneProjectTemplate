@@ -24,7 +24,7 @@
 ### Kaleb
 - The Student Symposium was an interesting experience because it allowed me to see many capstone projects that I otherwise never would have had the opportunity to see, and I like to imagine that's how other people felt about our project! I kind of wish there was more people around so there wasn't as much dead time during the event, but that's being nit picky. I'm interested to see what future events – such as the colloquium or the spring banquet – have to offer! 
 ### Spencer
--
+- I enjoyed the symposium. It feels good showing off what you have been working on. I expected people to have very little intrest in our project, but that was false. Several people are intrested in finance and investing. They asked good questions that I didn't expect to recieve.
 
 
 # Team Picture
